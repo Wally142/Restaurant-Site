@@ -6,20 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap-theme.css">
+    <script src="vendors/jquery.min.js"></script>
+    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
     <script src="scripts/restaurant.js"></script>
     <title>Pisco Palace</title>
 </head>
 <header>
     <h1>Pisco Palace</h1>
+    <hr>
 </header>
-<nav>
-    <a href="index.html">Home</a>
-    <a href="menu.html">Menu</a>
-    <a href="contact.html">Contact</a>
-</nav>
-<body>
-    <img src="images/pisco.jpg">
-</body>
+<ul class="nav nav-tabs">
+    <li class="active">
+        <a data-toggle="tab" href="#home">Home</a>
+    </li>
+    <li>
+        <a data-toggle="tab" href="#menu">Menu</a>
+    </li>
+    <li>
+        <a data-toggle="tab" href="#contact">Contact Us</a>
+    </li>
+</ul>
+<div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+
+        <body>
+            <img src="images/pisco.jpg">
+            <p>The Pisco Palace is a new to Minneapolis and gives the city it's first Peruvian Restaurant! The pisco sour is
+                our signature drink, try one with our authentic Peruvian food.</p>
+            <p>Located near Uptown Minneapolis, we are centrally located and we encourage you to come check us out when deciding
+                on where to go for your next Dinner!</p>
+        </body>
+    </div>
+    <div id="menu" class="tab-pane fade">
+
+        <body>
+            CHAUFA!
+        </body>
+    </div>
+    <div id="contact" class="tab-pane fade">
+
+        <body>
+            <div>
+                <h5>Name:</h5>
+                <input type="text">
+                <br>
+                <h5>Email:</h5>
+                <input type="text">
+                <br>
+                <h5>Phone:</h5>
+                <input type="text">
+                <br>
+            </div>
+            <div>
+                <h5>Reason for Inquiry:</h5>
+                <select>
+                    <option value="Catering">Catering</option>
+                    <option value="Private Party">Private Party</option>
+                    <option value="Feedback">Feedback</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div>
+                <h5>Additonal Information:</h5>
+                <textarea></textarea>
+
+            </div>
+            <div>
+                <h5>Have you been to Pisco Palace before?</h5>
+                Yes
+                <input type="radio" value="Yes">
+                <br> No
+                <input type="radio" value="No">
+                <br>
+            </div>
+            <div>
+                <h5>Best Days to Contact You:</h5>
+                <input value="Monday" type="checkbox">M
+                <input value="Tuesday" type="checkbox">T
+                <input value="Wednesday" type="checkbox">W
+                <input value="Thursday" type="checkbox">Th
+                <input value="Friday" type="checkbox">F
+            </div>
+            <div>
+                <button>Send Request</button>
+            </div>
+    </div>
+</div>
 <footer>
     <p>719 Lime Street, Minneapolis, MN 55408</p>
     <p>612-781-2236</p>
