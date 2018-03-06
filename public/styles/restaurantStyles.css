@@ -1,0 +1,11 @@
+/* Styles for the header and footer only */
+
+header {
+    text-align: center;
+    background-color: rgb(202, 8, 8);
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(202, 8, 8);
+}
