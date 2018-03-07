@@ -14,140 +14,214 @@
     <script src="scripts/restaurant.js"></script>
     <title>Pisco Palace</title>
 </head>
-<header>
-    <h1>Pisco Palace</h1>
-    <hr>
-</header>
-<ul class="nav nav-tabs">
-    <li class="active">
-        <a class="glyphicon glyphicon-home" data-toggle="tab" href="#home"></a>
-    </li>
-    <li>
-        <a data-toggle="tab" href="#menu">Menu</a>
-    </li>
-    <li>
-        <a data-toggle="tab" href="#contact">Contact Us</a>
-    </li>
-</ul>
-<br>
 
 <body>
+    <header>
+        <h1>Pisco Palace</h1>
+    </header>
+    <ul class="nav nav-tabs">
+        <li class="active">
+            <a class="glyphicon glyphicon-home" data-toggle="tab" href="#home"></a>
+        </li>
+        <li>
+            <a data-toggle="tab" href="#menu">Menu</a>
+        </li>
+        <li>
+            <a data-toggle="tab" href="#contact">Contact Us</a>
+        </li>
+    </ul>
+    <br>
+
+    <!-- Start of homepage Code -->
     <div class="tab-content">
         <div id="home" class="tab-pane fade in active">
+            <div class="jumbotron">
+                <p class="text-center">We are Opening a 2nd Location in Downtown St. Paul on April 9th!</p>
+                <p class="text-center">Stay Tuned! More Details to Come!</p>
+            </div>
             <div class="container-fluid text-center">
                 <div class="row">
                     <div class="col-md-6">
                         <img class="pisco" src="images/pisco.jpg">
-                        <br>
-                        <br>
+                    </div>
+                    <div class="col-md-6">
+                        <noscript>This page runs better with Javascript enabled! Please do so now!</noscript>
+                        <div id="newsCarousel" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#slide1" data-slide-to="0" class="active"></li>
+                                <li data-target="#slide2" data-slide-to="1"></li>
+                                <li data-target="#slide3" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item pisco active">
+                                    <img src="images/location.jpeg" alt="New St. Paul Location">
+                                    <p>St. Paul MN</p>
+                                </div>
+
+                                <div class="item pisco ">
+                                    <img src="images/seasonal.jpeg" alt="Seasonal Menu">
+                                    <p>New items to try</p>
+                                </div>
+
+                                <div class="item pisco">
+                                    <img src="images/drink.jpg" alt="Drink of the Month">
+                                    <p>Try our new SG Brew!</p>
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#newsCarousel" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#newsCarousel" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
                         <p>The Pisco Palace is a new to Minneapolis and gives the city it's first Peruvian Restaurant! The pisco
                             sour is our signature drink, try one with our authentic Peruvian food.</p>
                         <p>Located near Uptown Minneapolis, we are centrally located and we encourage you to come check us out
                             when deciding on where to go for your next Dinner!</p>
                     </div>
-                    <div class="jumbtron col-md-6">
-                        <p>NEW LOCATION!!</p>
-                    </div>
                 </div>
             </div>
         </div>
+        <!-- End homepage Code -->
 
+
+
+        <!-- Start of Menu Code -->
         <div id="menu" class="tab-pane fade">
-            <div class="container-fluid">
+            <div class="container-fluid text-center">
                 <div class="row">
                     <div class="col-md-4">
-                        <h2>Chaufa</h2>
+                        <h4>POLLO SALTADO $12.99</h4>
+                        <p>Beef with rice and potatos in a special sauce.</p>
                     </div>
                     <div class="col-md-4">
-                        <h2>Lomo Saltado</h2>
+                        <h4>LOMO SALTADO $13.99</h4>
+                        <p>Chicken with rice and potatos in a special sauce.</p>
                     </div>
                     <div class="col-md-4">
-                        <h2>Pescados</h2>
+                        <h4>CHAUFA CON POLLO $11.99</h4>
+                        <p>Peruvian fried rice with chicken and vegetables</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-4">
-                        <h2>Arroz con Pato</h2>
+                        <h4>CHAUFA CON MARISCOS $12.99</h4>
+                        <p>Peruvian fried rice with shrimp and vegetables</p>
                     </div>
                     <div class="col-md-4">
-                        <h2>Tonta Luz</h2>
+                        <h4>ARROZ CON PATO $15.99</h4>
+                        <p>Peruvian rice with roasted duck</p>
                     </div>
                     <div class="col-md-4">
-                        <h2>Fried Plantains</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <h2>Ceviche</h2>
-                    </div>
-                    <div class="col-md-4">
-                        <h2>Arroz con Pollo</h2>
-                    </div>
-                    <div class="col-md-4">
-                        <h2>Peruvian Spaghetti</h2>
+                        <h4>ARROZ CON POLLO $12.99</h4>
+                        <p>Peruvian rice with grilled chicken</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-4">
-                        <h2>Causa</h2>
+                        <h4>ARROZ CON MARISCOS $14.99</h4>
+                        <p>Peruvian rice with shrimp</p>
                     </div>
                     <div class="col-md-4">
-                        <h2>Legit Food</h2>
+                        <h4>CEVICHE DE PESCADO $10.99</h4>
+                        <p>A Peruvian favorite, our classic fish ceviche</p>
                     </div>
                     <div class="col-md-4">
-                        <h2>Get me some Peruvian Food</h2>
+                        <h4>CEVICHE DE MIXTO $11.99</h4>
+                        <p>Like the classic, but with a mix of fish and shrimp</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4>CAUSA DE POLLO $5.99</h4>
+                        <p>Mashed potato stuffed with chicken and spices</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>SALCHIPAPA $5.99</h4>
+                        <p>Fried hotdogs with french fries</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>RACHI $8.99</h4>
+                        <p>Beef with potatos and Peruvian corn</p>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- End Menu Code -->
 
+
+
+        <!-- Start Contact Code -->
         <div id="contact" class="tab-pane fade">
-            <div>
-                <h5>Name:</h5>
-                <input type="text">
-                <br>
-                <h5>Email:</h5>
-                <input type="text">
-                <br>
-                <h5>Phone:</h5>
-                <input type="text">
-                <br>
-            </div>
-            <div>
-                <h5>Reason for Inquiry:</h5>
-                <select>
-                    <option value="Catering">Catering</option>
-                    <option value="Private Party">Private Party</option>
-                    <option value="Feedback">Feedback</option>
-                    <option value="Other">Other</option>
-                </select>
-            </div>
-            <div>
-                <h5>Additonal Information:</h5>
-                <textarea></textarea>
-            </div>
-            <div>
-                <h5>Have you been to Pisco Palace before?</h5>
-                Yes
-                <input type="radio" value="Yes">
-                <br> No
-                <input type="radio" value="No">
-                <br>
-            </div>
-            <div>
-                <h5>Best Days to Contact You:</h5>
-                <input value="Monday" type="checkbox">M
-                <input value="Tuesday" type="checkbox">T
-                <input value="Wednesday" type="checkbox">W
-                <input value="Thursday" type="checkbox">Th
-                <input value="Friday" type="checkbox">F
-            </div>
-            <div>
-                <button>Send Request</button>
+            <div class="container-fluid text-center"></div>
+            <div class="row">
+                <div class="col-md-4">
+                    <img class="flag" src="images/peruFlag.jpg">
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <h5>Name</h5>
+                        <input class="input" type="text">
+                        <br>
+                        <h5>Email</h5>
+                        <input class="input" type="text">
+                        <br>
+                        <h5>Phone</h5>
+                        <input class="input" type="text">
+                        <br>
+                    </div>
+                    <div class="text-center">
+                        <h5>Reason for Inquiry</h5>
+                        <select>
+                            <option value="Catering">Catering</option>
+                            <option value="Private Party">Private Party</option>
+                            <option value="Feedback">Feedback</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="text-center">
+                        <h5>Additonal Information</h5>
+                        <textarea></textarea>
+                    </div>
+                    <div class="text-center">
+                        <h5>Have you been to Pisco Palace before?</h5>
+                        Yes
+                        <input type="radio" value="Yes">
+                        <br> No
+                        <input type="radio" value="No">
+                        <br>
+                    </div>
+                    <div class="text-center">
+                        <h5>Best Days to Contact You</h5>
+                        <input value="Monday" type="checkbox">M
+                        <input value="Tuesday" type="checkbox">T
+                        <input value="Wednesday" type="checkbox">W
+                        <input value="Thursday" type="checkbox">Th
+                        <input value="Friday" type="checkbox">F
+                    </div>
+                    <br>
+                    <div class="text-center">
+                        <button class="btn btn-primary">Send Request</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img class="flag" src="images/american.jpg">
+                </div>
             </div>
         </div>
     </div>
-    </div>
+    <!-- End Contact Code -->
+    <br>
+    <br>
 
     <footer>
         <p>719 Lime Street, Minneapolis, MN 55408</p>
