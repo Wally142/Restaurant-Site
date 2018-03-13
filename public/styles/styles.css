@@ -1,3 +1,13 @@
+header {
+    text-align: center;
+    background-color: rgb(202, 8, 8);
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(202, 8, 8);
+}
+
 .pisco {
     height: 350px;
     width: 500px;
@@ -16,3 +26,102 @@
     height: 350px;
     width: 500px;
  }
+
+ .jumbopics {
+     height: 184px;
+ }
+
+ .dropdown {
+  box-sizing: border-box;
+  border: 2px solid rgb(202, 8, 8);
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  width: 200px;
+  text-align-last: center;
+ }
+
+ h4 {
+     font-weight: bold;
+ }
+ 
+ textarea {
+     width: 400px;
+     height: 130px;
+     box-sizing: border-box;
+     border: 2px solid rgb(202, 8, 8);
+     border-radius: 4px;
+ }
+
+ .menustyle {
+     background-color: #eee;
+    }
+
+.head {
+    text-align: center;
+}
+
+#newsCarousel {
+    width: 500px !important;
+}
+
+.top {
+    top: 0;
+    bottom: auto;
+}
+
+
+
+/* Media Queries account for image size adjustments and their positions in the bootstrap grid */
+
+@media screen and (max-width: 375px) and (max-width: 767px) {
+    .flag {
+      position: relative;
+      left: 70px;
+      width: 250px;
+      height: 300px;
+    }
+      .pisco {
+      width: 310px;
+      height: 310px;
+      margin: 5%;
+    }
+     .top {
+       top: auto;
+       bottom: 0;
+    }
+     textarea {
+      width: 300px;
+      height: 100px; 
+     }
+}
+
+@media screen and (min-width: 768px) and (max-width: 770px){
+    .flag {
+      position: relative;
+      left: 140px;
+    }
+    .pisco {
+     margin: 5%;
+    }
+    .jumbopics {
+    width: 300px;
+    margin: 3%;
+  }   
+  #newsCarousel {
+   position: relative;
+   left: 120px;
+  }
+} 
+
+@media screen and (min-width: 1024px) and (max-width: 1030px){
+    .flag {
+      position: relative;
+      left: 60px;
+      width: 200px;
+    }
+    textarea {
+        position: relative;
+        right: 40px;
+    }
+}

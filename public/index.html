@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/restaurantStyles.css">
     <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap-theme.css">
     <script src="vendors/jquery.min.js"></script>
@@ -18,6 +17,8 @@
 <body>
     <header>
         <h1>Pisco Palace</h1>
+        <p>Atomsphere, Taste, Service</p>
+        <p>We Got It Covered</p>
     </header>
     <ul class="nav nav-tabs">
         <li class="active">
@@ -35,9 +36,20 @@
     <!-- Start of homepage Code -->
     <div class="tab-content">
         <div id="home" class="tab-pane fade in active">
-            <div class="jumbotron">
-                <p class="text-center">We are Opening a 2nd Location in Downtown St. Paul on April 9th!</p>
-                <p class="text-center">Stay Tuned! More Details to Come!</p>
+            <div class="row">
+                <div class="jumbotron container-fluid">
+                    <div class="col-md-4 text-center">
+                        <img class="jumbopics" src="images/balloon.jpg">
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <p>We are Opening a 2nd Location in Downtown St. Paul on April 9th!</p>
+                        <p>Stay Tuned! More Details to Come!</p>
+                        <p>We Thank all of our Customers for making this Possible!</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <img class="jumbopics" src="images/fireworks.jpg">
+                    </div>
+                </div>
             </div>
             <div class="container-fluid text-center">
                 <div class="row">
@@ -55,17 +67,23 @@
                             <div class="carousel-inner">
                                 <div class="item pisco active">
                                     <img src="images/location.jpeg" alt="New St. Paul Location">
-                                    <p>St. Paul MN</p>
+                                    <div class="carousel-caption">
+                                        <h3>St. Paul MN</h3>
+                                    </div>
                                 </div>
 
-                                <div class="item pisco ">
+                                <div class="item pisco mobile">
                                     <img src="images/seasonal.jpeg" alt="Seasonal Menu">
-                                    <p>New items to try</p>
+                                    <div class="carousel-caption">
+                                        <p>New items to try!</p>
+                                    </div>
                                 </div>
 
                                 <div class="item pisco">
                                     <img src="images/drink.jpg" alt="Drink of the Month">
-                                    <p>Try our new SG Brew!</p>
+                                    <div class="carousel-caption top">
+                                        <h3>The SG Brew!</h3>
+                                    </div>
                                 </div>
                             </div>
                             <a class="left carousel-control" href="#newsCarousel" data-slide="prev">
@@ -80,6 +98,7 @@
                     </div>
                 </div>
             </div>
+            <br>
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
@@ -96,64 +115,110 @@
 
 
         <!-- Start of Menu Code -->
-        <div id="menu" class="tab-pane fade">
-            <div class="container-fluid text-center">
-                <div class="row">
+        <div id="menu" class="tab-pane fade text-center">
+            <div "container-fluid">
+                <div class="row menustyle">
                     <div class="col-md-4">
-                        <h4>POLLO SALTADO $12.99</h4>
-                        <p>Beef with rice and potatos in a special sauce.</p>
+                        <h4>POLLO SALTADO</h4>
+                        <p>Beef with rice and potatos in a special sauce $12.99</p>
                     </div>
                     <div class="col-md-4">
-                        <h4>LOMO SALTADO $13.99</h4>
-                        <p>Chicken with rice and potatos in a special sauce.</p>
+                        <h4>LOMO SALTADO</h4>
+                        <p>Chicken with rice and potatos in a special sauce $13.99</p>
                     </div>
                     <div class="col-md-4">
-                        <h4>CHAUFA CON POLLO $11.99</h4>
-                        <p>Peruvian fried rice with chicken and vegetables</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <h4>CHAUFA CON MARISCOS $12.99</h4>
-                        <p>Peruvian fried rice with shrimp and vegetables</p>
-                    </div>
-                    <div class="col-md-4">
-                        <h4>ARROZ CON PATO $15.99</h4>
-                        <p>Peruvian rice with roasted duck</p>
-                    </div>
-                    <div class="col-md-4">
-                        <h4>ARROZ CON POLLO $12.99</h4>
-                        <p>Peruvian rice with grilled chicken</p>
+                        <h4>CHAUFA CON POLLO</h4>
+                        <p>Peruvian fried rice with chicken and vegetables $11.99</p>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row menustyle">
                     <div class="col-md-4">
-                        <h4>ARROZ CON MARISCOS $14.99</h4>
-                        <p>Peruvian rice with shrimp</p>
+                        <h4>CHAUFA CON MARISCOS</h4>
+                        <p>Peruvian fried rice with shrimp and vegetables $12.99</p>
                     </div>
                     <div class="col-md-4">
-                        <h4>CEVICHE DE PESCADO $10.99</h4>
-                        <p>A Peruvian favorite, our classic fish ceviche</p>
+                        <h4>ARROZ CON PATO</h4>
+                        <p>Peruvian rice with roasted duck $15.99</p>
                     </div>
                     <div class="col-md-4">
-                        <h4>CEVICHE DE MIXTO $11.99</h4>
-                        <p>Like the classic, but with a mix of fish and shrimp</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <h4>CAUSA DE POLLO $5.99</h4>
-                        <p>Mashed potato stuffed with chicken and spices</p>
-                    </div>
-                    <div class="col-md-4">
-                        <h4>SALCHIPAPA $5.99</h4>
-                        <p>Fried hotdogs with french fries</p>
-                    </div>
-                    <div class="col-md-4">
-                        <h4>RACHI $8.99</h4>
-                        <p>Beef with potatos and Peruvian corn</p>
+                        <h4>ARROZ CON POLLO</h4>
+                        <p>Peruvian rice with grilled chicken $12.99</p>
                     </div>
                 </div>
+                <div class="row menustyle">
+                    <div class="col-md-4">
+                        <h4>ARROZ CON MARISCOS</h4>
+                        <p>Peruvian rice with shrimp $14.99</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>CEVICHE DE PESCADO</h4>
+                        <p>A Peruvian favorite, our classic fish ceviche $10.99</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>CEVICHE MIXTO</h4>
+                        <p>Like the classic, but with a mix of fish and shrimp $11.99</p>
+                    </div>
+                </div>
+                <div class="row menustyle">
+                    <div class="col-md-4">
+                        <h4>CAUSA DE POLLO</h4>
+                        <p>Mashed potato stuffed with chicken and spices $5.99</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>SALCHIPAPA</h4>
+                        <p>Fried hotdogs with french fries $5.99</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>RACHI</h4>
+                        <p>Beef with potatos and Peruvian corn $8.99</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <br>
+                <h2 class="text-center"> Beverage List</h2>
+                <br>
+                <table class="table-striped table table-hover text-center">
+                    <thead>
+                        <tr>
+                            <th class="head">Cocktails</th>
+                            <th class="head">Beer On Tap (All $5.00)</th>
+                            <th class="head">Non-Alcholic</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="tabletext">Pisco Sour $5.25</td>
+                            <td class="tabletext">Coors Light</td>
+                            <td class="tabletext">Mango Juice $1.99</td>
+                        </tr>
+                        <tr>
+                            <td class="tabletext">Margarita $4.50</td>
+                            <td class="tabletext">Stella Artois</td>
+                            <td class="tabletext">Iced Tea $1.99</td>
+                        </tr>
+                        <tr>
+                            <td class="tabletext">Cucumber Collins $4.25</td>
+                            <td class="tabletext">Pacifico</td>
+                            <td class="tabletext">Lemonade $2.50</td>
+                        </tr>
+                        <tr>
+                            <td class="tabletext">Rum and coke $4.00</td>
+                            <td class="tabletext">Dos Equis</td>
+                            <td class="tabletext">Fruit Punch $1.99</td>
+                        </tr>
+                        <tr>
+                            <td class="tabletext">Long Island $6.25</td>
+                            <td class="tabletext">Summit EPA</td>
+                            <td class="tabletext">Pineapple Juice $1.99</td>
+                        </tr>
+                        <tr>
+                            <td class="tabletext">Pina Colada $5.75</td>
+                            <td class="tabletext">Lagunitas IPA</td>
+                            <td class="tabletext">Coke Products $1.99</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
         <!-- End Menu Code -->
@@ -169,19 +234,19 @@
                 </div>
                 <div class="col-md-4">
                     <div class="text-center">
-                        <h5>Name</h5>
+                        <h4>Name</h4>
                         <input class="input" type="text">
                         <br>
-                        <h5>Email</h5>
+                        <h4>Email</h4>
                         <input class="input" type="text">
                         <br>
-                        <h5>Phone</h5>
+                        <h4>Phone</h4>
                         <input class="input" type="text">
                         <br>
                     </div>
                     <div class="text-center">
-                        <h5>Reason for Inquiry</h5>
-                        <select>
+                        <h4>Reason for Inquiry</h4>
+                        <select class="dropdown">
                             <option value="Catering">Catering</option>
                             <option value="Private Party">Private Party</option>
                             <option value="Feedback">Feedback</option>
@@ -189,11 +254,11 @@
                         </select>
                     </div>
                     <div class="text-center">
-                        <h5>Additonal Information</h5>
+                        <h4>Additonal Information</h4>
                         <textarea></textarea>
                     </div>
                     <div class="text-center">
-                        <h5>Have you been to Pisco Palace before?</h5>
+                        <h4>Have you been to Pisco Palace before?</h4>
                         Yes
                         <input type="radio" value="Yes">
                         <br> No
@@ -201,7 +266,7 @@
                         <br>
                     </div>
                     <div class="text-center">
-                        <h5>Best Days to Contact You</h5>
+                        <h4>Best Days to Contact You</h4>
                         <input value="Monday" type="checkbox">M
                         <input value="Tuesday" type="checkbox">T
                         <input value="Wednesday" type="checkbox">W
@@ -224,8 +289,9 @@
     <br>
 
     <footer>
-        <p>719 Lime Street, Minneapolis, MN 55408</p>
+        <p>719 Lima Street, Minneapolis, MN 55408</p>
         <p>612-781-2236</p>
+        &copy 2018 Pisco Inc.
     </footer>
 </body>
 
