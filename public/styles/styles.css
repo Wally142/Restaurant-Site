@@ -8,7 +8,34 @@ footer {
     background-color: rgb(202, 8, 8);
 }
 
-.pisco {
+p, td {
+    font-family: 'Cantarell', sans-serif;
+}
+
+.head-p {
+    font-size: 18px;
+}
+
+#happy {
+    font-size: 16px;
+    background-color: #eee;
+}
+
+.title {
+     font-weight: bold;
+     font-family: 'Fjalla One', sans-serif;
+ }
+
+ textarea {
+     width: 400px;
+     height: 130px;
+     box-sizing: border-box;
+     border: 2px solid rgb(202, 8, 8);
+     border-radius: 4px;
+ }
+
+
+ .pisco {
     height: 350px;
     width: 500px;
 }
@@ -41,21 +68,9 @@ footer {
   text-align-last: center;
  }
 
- h4 {
-     font-weight: bold;
- }
- 
- textarea {
-     width: 400px;
-     height: 130px;
-     box-sizing: border-box;
-     border: 2px solid rgb(202, 8, 8);
-     border-radius: 4px;
- }
-
- .menustyle {
-     background-color: #eee;
-    }
+.menustyle {
+    background-color: #eee;
+}
 
 .head {
     text-align: center;
@@ -125,3 +140,5 @@ footer {
         right: 40px;
     }
 }
+
+
